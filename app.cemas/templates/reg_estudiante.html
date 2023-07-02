@@ -1,0 +1,81 @@
+{% extends "index.html" %}
+
+{% block contenido %}
+
+
+
+<div class="container">
+  <section class="section register min-vh-10 d-flex flex-column align-items-center justify-content-center py-2">
+    <div class="shadow-lg">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+<!-- Multi Columns Form -->
+
+              <div class="pt-6 pb-2">
+                <h5 class="card-title text-center pb-0 fs-4"><strong>Registro</strong></h5>
+                <p class="text-center small">Personal Admin</p>
+              </div>
+
+          <form class="row g-3">
+              <div class="col-md-12">
+                <label for="inputName5" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="inputName5">
+              </div>
+
+              
+
+              <div class="col-md-12">
+                <label for="inputEmail5" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail5" placeholder="Example@email.com">
+              </div>
+
+              <div class="col-md-12">
+                <label for="inputPassword5" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="inputPassword5" placeholder="Password" >
+              </div>
+
+              <div class="col-12">
+                <label for="inputAddress5" class="form-label">Confirma contraseña</label>
+                <input type="password" class="form-control" id="inputAddres5s" placeholder="Password">
+              </div>
+                          
+
+              <div class="col-md-8">
+                <label for="inputState" class="form-label">Area</label>
+                    <select id="inputState" class="form-select">
+                        <option>Adminitrativa</option>
+                        <option>Pedagogíca.</option>
+                        <option>Tecnica.</option>
+                    </select>
+              </div>
+
+          
+              <div class="conteiner ">
+                    <div class="text-center card-body">
+                        <button type="button" class="btn btn-success">Registrar</button>
+                        <button type="button" class="btn btn-danger">Limpiar</button>
+                    </div>
+              </div>
+
+            </form>
+            <!-- End Multi Columns Form -->
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+</html>
+
+
+{% endblock %}
+    
