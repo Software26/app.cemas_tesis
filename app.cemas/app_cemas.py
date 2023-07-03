@@ -2,24 +2,72 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+
+#-----------------------Login-------------------------------------------------------
+
 @app.route("/login")
 def login():
     return render_template("login.html")
 
-@app.route("/index")
-def pagina2():
-    return render_template("index.html") #este es el enlce a la herecia 1.html
+#------------------------------------------------------------------------------
 
+#--------------------------Libro----------------------------------------------------
+
+
+@app.route("/libro")
+def libro():
+    return render_template ("reg_btn_libro.html")
+    
+@app.route("/reg_libro")
+def reg_libro():
+    return render_template("reg_libro.html")
+
+
+#-------------------------------fin de libro--------------------------------------------------
+
+
+#-----------------------Pag. pricipal-------------------------------------------------
+
+
+@app.route("/index")
+def index():
+    return render_template("index.html") 
+
+#-----------------------Fin pag. pricipal----------------------------------------------------------
+
+
+
+
+
+#-----------------------Admin Personal-------------------------------------------------
 
 @app.route("/reg_personal_admin")
-def prueba():
-    return render_template("reg_personal_Admin.html")
+def reg_personal_admin():
+    return render_template("reg_personal_admin.html")
 
+
+#----------------------Fin estudiante-------------------------------------------------
+
+
+
+
+#-----------------------Estudiante-------------------------------------------
 
 
 @app.route("/estudiante")
 def estudiante():
     return render_template("reg_estudiante.html")
+
+
+#-------------------------Fin estudiante---------------------------------------------------
+
+@app.route("/asignaturas")
+def asignaturas():
+    return render_template ("reg_asignaturas.html")
+    
+@app.route("/asignaturasbtn")
+def asignaturasbtn():
+    return render_template("reg_btn_asignaturas.html")
 
 
 
