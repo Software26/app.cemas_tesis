@@ -14,13 +14,13 @@ def login():
 #--------------------------Libro----------------------------------------------------
 
 
+@app.route("/librobtn")
+def librobtn():
+    return render_template("librobtn.html")
+    
 @app.route("/libro")
 def libro():
-    return render_template ("reg_btn_libro.html")
-    
-@app.route("/reg_libro")
-def reg_libro():
-    return render_template("reg_libro.html")
+    return render_template("libro.html")
 
 
 #-------------------------------fin de libro--------------------------------------------------
@@ -63,15 +63,31 @@ def estudiante():
 
 @app.route("/asignaturas")
 def asignaturas():
-    return render_template ("reg_asignaturas.html")
+    return render_template("asignaturas.html")
     
 @app.route("/asignaturasbtn")
 def asignaturasbtn():
-    return render_template("reg_btn_asignaturas.html")
+    return render_template("asignaturasbtn.html")
 
+#----------------------------------------------------------------------------------------------------
+@app.route("/boetin")
+def boletin():
+    return render_template("")
+    
+@app.route("/boletinbtn")
+def boletinbtn():
+    return render_template("boletinbtn.html")
+#--------------------------------------------------------------------------------------------------
+"""
+@app.route("/")
+def boletin():
+    return render_template("")
+    
+@app.route("/boletinbtn")
+def boletinbtn():
+    return render_template("boletinbtn.html")
 
-
-
+"""
 
 
 if __name__ == '__main__':
